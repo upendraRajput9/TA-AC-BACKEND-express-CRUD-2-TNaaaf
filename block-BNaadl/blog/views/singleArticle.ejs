@@ -8,10 +8,21 @@
 </head>
 <body>
     <h1><%=article.title%></h1>
-    <h1><%=article.description%></h1>
-    <h1><%=article.tags%></h1>
-    <h1><%=article.author%></h1>
-    <h1><%=article.likes%></h1>
+    <h2><%=article.description%></h2>
+    <h2><%=article.tags%></h2>
+    <h2><%=article.author%></h2>
+    <h3><%=article.likes%></h3><a href="/articles/<%=article._id%>/likes">
+    <button>like</button>
+    </a>
+<a href="/articles/<%=article._id%>/edit">
+<button>Edit</button>
+</a>
+<a href="/articles/<%=article._id%>/delete">
+<button>Delete</button>
+</a>
+<a href="/articles/">
+<button>All Articles</button>
+</a>
 
 </body>
 </html>
