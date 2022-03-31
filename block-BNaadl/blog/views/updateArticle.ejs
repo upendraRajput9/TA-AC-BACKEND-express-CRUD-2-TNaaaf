@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/articles/<%=article._id%>/update" method="POST">
+        <input type="text" value="<%=article.title%>" placeholder="Title" name="title">
+        <input type="text" value="<%=article.description%>" placeholder="Description" name=" description">
+        <input type="text" value="<%=article.tags%>" placeholder="Tags" name="tags">
+        <input type="text" value="<%=article.author%>" placeholder="Author" name="author">
+        <input type="text" value="<%=article.likes%>" placeholder="Likes" name="likes">
+        <input type="submit">
+        </form>
+</body>
+</html>
